@@ -1,0 +1,416 @@
+/* RESET
+----------------------------------------------------------------------------------------------------*/
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    font-family: "SegoeUI-Regular", "OpenSans", sans-serif;
+    font-size: 0.875em;
+    line-height: 1.2em;
+    color: #404040;
+}
+.rs, h1.rs, h2.rs, h3.rs, h4.rs, h5.rs, h6.rs {
+    margin: 0;
+    padding: 0;
+}
+ul.rs, ol.rs {
+    list-style: none;
+}
+
+img {
+    /* Part 1: Set a maxium relative to the parent */
+    /*width: auto\9; */
+    /* IE7-8 need help adjusting responsive images */
+    height: auto;
+    /* Part 2: Scale the height according to the width, otherwise you get stretching */
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+button, input, select, textarea {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+}
+button, input {
+    *overflow: visible;
+    line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: none;
+}
+
+/* COMMON STYLE 
+----------------------------------------------------------------------------------------------------*/
+
+a,a:hover,a:focus {
+    text-decoration: none;
+    outline: none;
+
+}
+a {
+    color: #d98c21;
+    transition: all 0.5s ease-out 0s;
+    cursor: pointer;
+}
+
+input[type="text"],textarea {
+    background: #fff;
+    border: 1px solid #000;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    color: #000;
+    font-size: 16px;
+    line-height: 150%;
+}
+.md-button, input[type="text"],.md-progress, textarea, .md-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.md-comingsoon {
+    font-family: 'Nixie One', cursive;
+    font-weight: normal;
+    color: #000;
+    width: 100%; 
+    margin: 0 auto; 
+    position: relative;
+}
+.md-description, input[type="text"],.md-page,textarea,.md-twitter,.md-sale .md-confirm label  {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+.md-mask {position: fixed; z-index: 999; top: 0; left: 0; bottom: 0; right: 0}
+.md-wrap {position: relative; height: 100%; width: 100%; z-index: 9999;}
+.md-sections {width: 100%; height: 100% !important;/* min-height: 300px;*/ text-align: center; }
+    .md-section {position: absolute; height: 100%; width: 100%; top: 0; bottom: 0; left: 0; right: 0;}
+    .md-section:nth-child(1) {top:0;}
+    .md-section:nth-child(2) {top:100%;}
+    .md-section:nth-child(3) {top:200%;}
+    .md-section:nth-child(4) {top:300%;}
+    .md-section:nth-child(5) {top:400%;}
+.md-content {
+    margin: 0 auto; 
+    width: 95%; 
+    max-width: 1020px;
+    position: relative;
+    z-index: 99999;
+}
+.md-bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0
+}
+.md-bg-image img {
+    position: absolute;
+}
+
+.md-title {	font-size: 48px; line-height: 120%;	margin: 1em 0 0; width: 100%; transition: all 0.5s ease-out 0s;}
+.md-description {font-size: 16px; max-width: 755px; margin: 0 auto; line-height: 150%; width: 100%;}
+.icon-angle-up, .icon-angle-down {
+    font-size: 60px;
+    position: fixed;
+    z-index: 9999; 
+    display: block;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -23px;
+    opacity: 0.3;
+    transition: all 0.5s ease-out 0s;
+}
+.icon-angle-up {top: -1px;}
+.icon-angle-down {bottom: -5px;}
+[class^="icon-angle"]:hover {opacity: 1;}
+.md-pages {position: fixed; z-index: 9999; right: 33px; bottom: 12px;}
+.md-page {
+    background-image:  url('../images/sprite.png'); 
+    width: 45px; 
+    height: 45px; 
+    text-align: center; 
+    float: left;
+    margin-right: -5px;
+    cursor: pointer; 
+    transition: all 0.5s ease-out 0s;
+}
+.md-page a {display: inline-block; margin: 13px 5px 6px; color: #FFF;}
+.md-form {width: 400px; margin: 0 auto 24px ;}
+.md-form label {font-family: 'Open Sans'; text-align: left; padding: 8px 2px 5px; display: block;}
+
+/* BUTTON STYLE 
+----------------------------------------------------------------------------------------------------*/
+.md-button {
+    border: 1px solid #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+}
+
+/* MD-OPTION-2 STYLE
+----------------------------------------------------------------------------------------------------*/
+.md-option-2 a:hover {color: #875318;}
+.md-option-2 .md-logo h1 a {background-image: url('../images/logo2.png');}
+.md-option-2 .md-page {background-position: -155px -45px;}
+.md-option-2 .md-page:hover, 
+.md-option-2 .md-page.usl-current {background-position: -155px -90px;}
+.md-option-2 .md-progress .md-progess-change {background: rgba(255,255,255,0.5);}
+.md-option-2 .md-follow-items a::after {background-position: 0 -305px;}
+.md-option-2 .md-mask {background-color: #ffcb39; position: absolute !important;}
+.md-option-2 #ri-grid {display: none;}
+
+
+/* HOME STYLE 
+----------------------------------------------------------------------------------------------------*/
+
+.md-home .md-arrow-top {display: none;}
+.md-home-progress .md-description  {margin: 30px auto 58px ;}
+.md-home .md-logo h1 {display: inline-block;}
+.md-logo h1 a {
+    display: block;
+    width: 102px; 
+    height: 119px;
+}
+
+/* NOTIFY STYLE 
+----------------------------------------------------------------------------------------------------*/
+
+.md-notify .md-form {width: 550px; margin: 0 auto;}
+.md-notify .notify-input {float: left;width: 72.72%;}
+.md-notify .md-button {float: left; width: 27.27%; border-left-width: 0;}
+.md-notify .md-description  {margin: 26px auto 60px ;}
+
+/* CONTACT STYLE 
+----------------------------------------------------------------------------------------------------*/
+.md-contact h1 {margin-bottom: 50px;}
+textarea {height: 120px; padding-top: 12px;}
+
+/* FOLLOW STYLE 
+----------------------------------------------------------------------------------------------------*/
+
+.md-follow-items {margin: 75px auto 115px; display: inline-block;}
+.md-follow-items [class^="icon-"] {
+    color: #FFF;
+    display: inline-block;
+    font-size: 60px;
+    height: 66px;
+    position: relative;
+    margin-top: 42px;
+}
+.md-follow-items a {
+    background-image: url('../images/sprite.png'); 
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 155px; 
+    height: 152px; 
+    display: inline-block;
+    position: relative;
+    margin-right: 28px;
+    text-align: center;
+    float: left;
+}
+.md-follow-items a:last-child {margin-right: 0;}
+.md-follow-items [class^="icon-"]::after,
+.md-follow-items a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    content: "";
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.md-follow-items [class^="icon-"]::after,
+.md-follow-items a::after {
+    opacity: 0;
+    -webkit-transform: translateY(-15px) translateX(15px);
+    -moz-transform: translateY(-15px) translateX(15px);
+    transform: translateY(-15px) translateX(15px);
+}
+.md-follow-items a::after {background-image: url('../images/sprite.png');}
+.md-follow-items a:hover [class^="icon-"]::after,
+.md-follow-items a:focus [class^="icon-"]::after,
+.md-follow-items a:hover::after,
+.md-follow-items a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateX(0px);
+    -moz-transform: translateY(0px) translateX(0px);
+    transform: translateY(0px) translateX(0px);
+}
+.md-follow-items .icon-facebook::after{content: '\f09a';}
+.md-follow-items .icon-twitter::after{content: '\f099';}
+.md-follow-items .icon-google-plus::after{content: '\f0d5';}
+.md-follow-items .icon-linkedin::after{content: '\f0e1';}
+.md-follow-items .icon-dribbble::after{content: '\f17d';}
+.md-twitter {display: inline-block;}
+.md-twitter .icon-twitter {
+    font-size: 30px;
+    color: #FFF;
+    display: inline-block;
+    padding: 8px 20px;
+    border-right: 2px solid #FFF;
+    float: left;
+    width: 32px;
+    height: 36px;
+}
+.md-tw-des {float:left; color: #FFF; margin-left: 20px; text-align: left; width: 90%}
+.md-tw-des ul {padding: 0; margin: 0;}
+.md-twitter .md-tw-des small {font-size: 12px; line-height: 150%;}
+.md-twitter .md-tw-des p {font-size: 16px; line-height: 150%; margin: 0;}
+.tweet_list li {list-style: none;font-size: 16px}
+.tweet_list small {font-size: 12px}
+
+/* ri-grid STYLE 
+----------------------------------------------------------------------------------------------------*/
+
+.ri-grid{
+    position: fixed;
+    height: auto;
+    overflow: hidden;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+.ri-blue {background: url(../images/blue.png) repeat 0 0;width: 100%;
+    height: 100%; position: absolute; z-index: 2}
+.ri-grid ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+    content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+    -webkit-perspective: 400px;
+    -moz-perspective: 400px;
+    -o-perspective: 400px;
+    -ms-perspective: 400px;
+    perspective: 400px; 
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #000;
+}
+
+
+.ri-grid ul li a{
+    display: block;
+    outline: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* Clearfix
+----------------------------------------------------------------------------------------------------*/
+* html .clearfix,
+* html .ui-helper-clearfix {
+    height: 1%; /* IE5-6 */
+}
+
+.clearfix,
+.ui-helper-clearfix {
+    display: inline-block; /* IE7xhtml*/
+}
+
+html .clearfix,
+html .ui-helper-clearfix {
+    display: block; /* O */
+}
+.clear {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    height: 0;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}
+.clearfix:after,
+.ui-helper-clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0;
+    font-size: 1px;
+    overflow: hidden;
+}

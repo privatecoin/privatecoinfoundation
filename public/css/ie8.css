@@ -1,0 +1,5 @@
+input[type="text"] {line-height: 50px;}
+#md-option-2 .md-mask {background-image: url('../images/ie8/bg-mask2.png'); background-repeat: repeat;}
+#md-option-2 .md-follow-items a:hover {background-image: url('../images/sprite.png'); background-position: 0 -305px;}
+#md-option-2 .md-progress .md-progess-change {background-image: url('../images/ie8/bg-progress.png'); background-repeat: repeat;}
+#md-option-2 .md-button {background-color: transparent ; background-image: url('../images/ie8/bg-btn.png'); background-repeat: repeat;}

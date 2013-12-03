@@ -1,0 +1,197 @@
+@media screen and (max-width: 1024px) {
+	.md-title {font-size: 40px;}
+
+	/* HOME STYLE */
+	.md-home .md-logo {margin-bottom: 20px;}
+	.countdown_section, .md-follow-items a{
+	    background-image: url('../images/sprite-rwd.png');
+	    background-position: 0 0;
+	    width: 124px; 
+	    height: 124px; 
+	    font-size: 20px; 
+	    margin-right: 10px; 
+	}
+	.countdown_section .countdown_amount {
+		font-size: 50px;
+		margin: 30px auto;
+	}
+	/* FOLLOW STYLE */
+	.md-follow-items {margin: 65px auto 32px;}
+	.md-follow-items a {margin-right: 8px;}
+	.md-follow-items [class^="icon-"] {
+	    font-size: 52px;
+	    margin-top: 36px;
+	}
+	.md-follow-items a::after {background-image: url('../images/sprite-rwd.png');}
+	.md-option-2 .md-follow-items a::after {background-position: 0 -248px;}
+	.md-twitter {display: inline-block;}
+	.md-twitter .icon-twitter {
+	    color: #FFF;
+	    border-right-width: 0;
+	    float: none;
+	}
+	.md-tw-des {float:none; color: #FFF; margin: 0 auto; text-align: center;}
+}
+
+@media screen and (max-width: 700px ) {
+	.md-title {font-size: 35px; margin: 0;}
+	.md-pages {display: none !important;}
+
+	/* HOME STYLE */
+	.md-home .md-logo {margin-bottom: 10px;}
+	.md-logo h1 a {
+		background-size: 84px 99px;
+		background-repeat: no-repeat;
+		height: 99px;
+		width: 84px;
+	}
+	.md-option-2 .md-logo h1 a {
+		background-image: url('../images/logo-medium2@2x.png'); 
+	}
+	#defaultCountdown {margin-top: 30px;}
+	.countdown_section, .md-follow-items a{
+	    background-image: url('../images/sprite-rwd.png');
+	    background-position: -125px 0;
+	    width: 99px; 
+	    height: 99px; 
+	    font-size: 14px; 
+	    margin-right: 10px; 
+	    line-height: 0;
+	}
+	.countdown_section {font-size: 16px;}
+	.countdown_section .countdown_amount {
+		font-size: 40px;
+		margin: 24px auto 50px;
+	}
+
+	/* FOLLOW STYLE */
+	.md-follow-items {margin: 35px auto 32px;}
+	.md-follow-items a {font-size: 42px;}
+	.md-follow-items [class^="icon-"] {
+	    font-size: 44px;
+	    margin-top: 28px;
+	}
+	.md-option-2 .md-follow-items a::after {background-position: -124px -197px;}
+	.md-twitter .md-tw-des p {font-size: 15px;}
+
+	/* NOTIFY STYLE */
+	.md-notify .md-form {max-width: 550px; width: 100%;}
+}
+
+@media screen and (max-width: 570px) {
+	.md-title {font-size: 30px;}
+	.md-description {font-size: 15px; margin: 15px auto 25px;}
+	.md-home-progress .md-description {font-size: 15px; margin: 15px auto 25px;}
+
+	/* HOME STYLE */
+	.countdown_section {font-size: 10px; margin: 0;}
+	.countdown_section .countdown_amount {
+		font-size: 28px;
+		margin: 14px auto 30px;
+	}
+	.countdown_section, .md-follow-items a{
+	    background-image: url('../images/sprite-rwd.png');
+	    background-position: -223px 0;
+	    width: 62px; 
+	    height: 62px; 
+	    font-size: 14px; 
+	    margin-right: 10px; 
+	    line-height: 0;
+	}
+
+	/* NOTIFY STYLE */
+	.md-notify .md-button>span {font-size: 15px;}
+
+	/* CONTACT STYLE */
+	.md-contact h1 {margin-bottom: 15px;}
+	.md-form {margin: 0 auto 15px;}
+	.md-form, .md-button {
+		max-width: 400px;
+		width: 100%;
+	}
+	.md-form input[type="text"], textarea {padding-left: 5px;}
+	input[type="text"] {height: 38px;}
+	textarea {height: 80px;}
+	.md-form .md-button {height: 38px; font-size: 17px;}
+
+	/* FOLLOW STYLE */ 
+	.md-follow-items {margin: 35px auto 32px;}
+	.md-follow-items a {font-size: 42px;}
+	.md-follow-items [class^="icon-"] {
+	    font-size: 26px;
+	    margin-top: 17px;
+	}
+	.md-option-2 .md-follow-items a::after {background-position: -223px -124px;}
+}
+
+@media screen and (max-width: 380px) {
+	.md-title {font-size: 22px;}
+	.md-description {font-size: 13px;}
+
+	/* HOME STYLE */
+	.md-logo h1 a {
+		background-size: 64px 75px;
+		background-repeat: no-repeat;
+		height: 75px;
+		width: 64px;
+	}
+	.md-option-2 .md-logo h1 a {background-image: url('../images/logo-small2@2x.png');}
+
+	.countdown_section {font-size: 12px; margin: 0;}
+	.countdown_section, .md-follow-items a{margin-right: 6px;}
+	.countdown_section:nth-child(1) {margin-left: 34px;}
+	.countdown_section:nth-child(3) {clear: left;}
+	.countdown_section:nth-child(3), .countdown_section:nth-child(5), .countdown_section:nth-child(4) {margin-top: 30px;}
+
+	/* CONTACT STYLE */
+	.md-sale .md-button {font-size: 15px;}
+	.md-confirm label {margin-right: 0; width: 63.5%}
+	.md-confirm .random-equation {float: right; margin-top: 0; margin-right: 10px;}
+	.md-confirm input { 
+		float: right;
+	    height: auto;
+	    margin-top: 6px;
+	    padding: 6px 5px;
+	    width: 80px;
+	}
+
+	/* FOLLOW STYLE */
+	.md-follow-items a:nth-child(1) {margin-left: 34px;}
+	.md-follow-items a:nth-child(3) {clear: left;}
+	.md-follow-items a:nth-child(3), .md-follow-items a:nth-child(5), .md-follow-items a:nth-child(4) {margin-top: 10px;}
+}
+@media screen and (max-width: 280px) {
+	
+	/* HOME STYLE */
+	.countdown_section, .md-follow-items a {float: none; margin-right: 0;}
+	#defaultCountdown {margin-top: 25px;}
+	.countdown_section {
+		padding-top: 1px;
+		margin-bottom: 10px;
+	}
+	.md-follow-items a:nth-child(4),
+	.countdown_section:nth-child(4),
+	.countdown_section:nth-child(5) {margin-top: 0;}
+	.countdown_section .countdown_amount {
+		font-size: 30px;
+		margin: 10px auto 8px;
+	}
+
+	/* NOTIFY STYLE */
+	.md-notify .md-button>span {font-size: 13px;}
+	.md-notify .md-button {
+		float: none;
+		display: block;
+		margin: 10px auto 0; 
+		border-left: 1px solid #FFF; 
+		width: 30%; 
+		height: auto; 
+		transition: all 0s ease-out 0s; }
+	.md-notify input {float:none;}
+	.md-notify .md-form input[type="text"] {width: 100%; padding: 0 5px;}
+
+	/* FOLLOW STYLE */
+	.md-follow-items a {margin-top: 10px; display: block;}
+	.md-follow-items a:nth-child(4), .countdown_section:nth-child(4){margin-left: 0;}
+
+}
